@@ -46,7 +46,7 @@ const Technologies = () => {
           <RiReactjsLine className=" text-6xl text-cyan-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(2)}
+          variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
           className=" rounded-2xl border-4 border-neutral-900 p-4"

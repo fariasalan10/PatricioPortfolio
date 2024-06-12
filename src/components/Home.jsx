@@ -7,7 +7,7 @@ const container = (delay) => ({
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.5, delay: delay },
+    transition: { duration: 1, delay: delay },
   },
 });
 
@@ -49,7 +49,7 @@ const Home = () => {
               <motion.img
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 1 }}
                 whileHover={{ scale: 1.1 }}
                 className="rounded-full w-2/3"
                 src={profileImage}

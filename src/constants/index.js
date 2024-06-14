@@ -75,7 +75,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Diagonal Ica 311, General Bustos, Córdoba, Argentina",
+  address: "Diagonal Ica 311, General Bustos - Córdoba, Argentina",
   phoneNo: "+56 9 351 15 7579062",
   email: "patriciolarriaga10@gmail.com",
 };

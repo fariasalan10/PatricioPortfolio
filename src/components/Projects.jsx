@@ -8,10 +8,18 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1 }}
-        className="my-20 text-center text-3xl"
+        className="mt-20 text-center text-3xl"
       >
         Projects
       </motion.h2>
+      <motion.h3
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        className="mb-20 mt-10 text-center text-sm"
+      >
+        ¡Haz click en la imágen para ver el proyecto!
+      </motion.h3>
       <div>
         {PROJECTS.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">

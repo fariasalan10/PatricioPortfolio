@@ -1,7 +1,7 @@
 import project1 from "../assets/projects/project-1.png";
-import project2 from "../assets/projects/project-1.png";
-import project3 from "../assets/projects/project-1.png";
-import project4 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
 
 export const HOME_CONTENT = `Estudiante de la tecnicatura en ciencia de datos en el instituto Teclab, cuento con experiencia en el armado de reportes interactivos en Power Bi y Excel. Actualmente me desempeño como Especialista de operaciones en Siscard SA, con la tarea de coordinar las rutas de proveedores de forma eficiente además de relevar el stock para asegurar el cumplimiento del servicio en el tiempo que demanda el cliente. 
 Adicionalmente he desarrollado paneles de control en Power Bi que ayudaron a la empresa a simplificar las tareas diarias y a tomar decisiones basadas en datos.`;
@@ -75,7 +75,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "Calle 123, Cordoba, Argentina",
-  phoneNo: "+56 9 351 15 1234567",
-  email: "pato@pato.com",
+  address: "Diagonal Ica 311, General Bustos, Córdoba, Argentina",
+  phoneNo: "+56 9 351 15 7579062",
+  email: "patriciolarriaga10@gmail.com",
 };

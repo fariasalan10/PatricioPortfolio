@@ -1,7 +1,7 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-1.png";
+import project3 from "../assets/projects/project-1.png";
+import project4 from "../assets/projects/project-1.png";
 
 export const HOME_CONTENT = `Estudiante de la tecnicatura en ciencia de datos en el instituto Teclab, cuento con experiencia en el armado de reportes interactivos en Power Bi y Excel. Actualmente me desempeño como Especialista de operaciones en Siscard SA, con la tarea de coordinar las rutas de proveedores de forma eficiente además de relevar el stock para asegurar el cumplimiento del servicio en el tiempo que demanda el cliente. 
 Adicionalmente he desarrollado paneles de control en Power Bi que ayudaron a la empresa a simplificar las tareas diarias y a tomar decisiones basadas en datos.`;
@@ -41,32 +41,36 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Tablero de ventas - Peluqueria de cejas",
+    url: "https://app.powerbi.com/view?r=eyJrIjoiODI2MjYwNzYtZDI4NS00YzM4LWEwZTYtZDc3ODZlYTQ2NzljIiwidCI6ImViZTFkZTRkLWIyM2EtNDMxNC1hNGM4LTk3OTRiZGVlNDY5OSIsImMiOjR9",
     image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    technologies: ["Excel", "Power BI"],
   },
   {
-    title: "Task Management App",
+    title: "Analisis de mercado - Industria Petrolera",
+    url: "https://app.powerbi.com/view?r=eyJrIjoiMGZjMTBmNWYtM2I0OS00NzU1LWFlOGItYWMxMTBlYmVhZTNjIiwidCI6ImViZTFkZTRkLWIyM2EtNDMxNC1hNGM4LTk3OTRiZGVlNDY5OSIsImMiOjR9",
     image: project2,
     description:
       "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    technologies: ["Excel", "Power BI"],
   },
   {
-    title: "Portfolio Website",
+    title: "Reporte de Recursos Humanos",
+    url: "https://app.powerbi.com/view?r=eyJrIjoiZWY5M2Y1OWItMGQ1Zi00NTkxLWFiZjUtZGI3NWFiMzBlMDZkIiwidCI6ImViZTFkZTRkLWIyM2EtNDMxNC1hNGM4LTk3OTRiZGVlNDY5OSIsImMiOjR9",
     image: project3,
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    technologies: ["Excel", "My SQL", "Power BI"],
   },
   {
-    title: "Blogging Platform",
+    title: "Tablero de ventas - Issa Funstore",
+    url: "https://app.powerbi.com/view?r=eyJrIjoiN2QyMDYxNWQtNDYyNy00MWM1LWI4ZjgtNTdmMmJhNTllNjY5IiwidCI6ImViZTFkZTRkLWIyM2EtNDMxNC1hNGM4LTk3OTRiZGVlNDY5OSIsImMiOjR9",
     image: project4,
     description:
       "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    technologies: ["Excel", "Power BI"],
   },
 ];
 

@@ -49,16 +49,19 @@ const Home = () => {
         </div>
         <div className="pt-10 w-full lg:w-1/2 lg:p-8 my-auto">
           <div>
-            <Link className="flex justify-end items-center" to="about">
+            <Link
+              className="flex justify-center lg:justify-end items-center"
+              to="about"
+            >
               <motion.img
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 1 }}
                 whileHover={{ scale: 1.1 }}
-                className="rounded-full w-2/3"
+                className="rounded-full w-2/3 cursor-pointer"
                 src={profileImage}
                 alt="Patricio Larriaga"
-              />{" "}
+              />
             </Link>
           </div>
         </div>

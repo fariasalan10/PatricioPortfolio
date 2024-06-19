@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div id="projects" className="border-b border-neutral-900 pb-4">
+    <div id="projects" className="border-b border-neutral-900 pb-4 px-10">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -27,15 +27,19 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1 }}
-              className="w-full lg:w-1/2"
+              className="w-full lg:w-1/2 lg:flex justify-center items-center  my-4"
             >
-              <img
-                src={project.image}
+              <a
                 href={project.url}
-                alt={project.title}
-                style={{ width: 350, height: 300 }}
-                className="mb-4 rounded-3xl lg:mx-auto"
-              />
+                className="flex justify-center items-center w-fit h-fit"
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  style={{ width: 350, height: 300 }}
+                  className="rounded-3xl lg:mx-auto"
+                />
+              </a>
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}

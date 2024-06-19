@@ -54,7 +54,7 @@ export const EDUCATION = [
     year: "Oct. 2023 - Actualidad",
     ubication: "Cordoba, Argentina",
     role: "Tecnico superior en Data Science",
-    company: "Instituto Tecnico Superior Teclab",
+    company: "Instituto Teclab",
     certificate: "https://www.coderhouse.com/ar/",
   },
   {

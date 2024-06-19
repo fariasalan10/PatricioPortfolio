@@ -1,6 +1,5 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaTimes } from "react-icons/fa";
@@ -39,30 +38,97 @@ const Navbar = () => {
           } transition-transform absolute top-0 left-0 h-screen w-screen bg-zinc-900/80 flex flex-col items-center justify-center gap-8 text-sm`}
           onClick={() => setOpen(false)}
         >
-          <Link to={"home"}>
-            <li className="text-center py-1 hover:text-violet-400">Home</li>
-          </Link>
-          <Link to={"/about"}>
-            <li className="text-center py-1 hover:text-violet-400">About Me</li>
-          </Link>
-          <Link to={"/technologies"}>
-            <li className="text-center py-1 hover:text-violet-400">
-              Technologies
+          <Link
+            to={"home"}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={10}
+            onClick={toggle}
+          >
+            <li className="text-center py-1 hover:text-violet-400 cursor-pointer">
+              Inicio
             </li>
           </Link>
-          <Link to={"/experience"}>
-            <li className=" text-center py-1 hover:text-violet-400">
-              Experiences
+          <Link
+            to={"about"}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={50}
+            onClick={toggle}
+          >
+            <li className="text-center py-1 hover:text-violet-400 cursor-pointer">
+              Sobre Mi
             </li>
           </Link>
-          <Link to={"/projects"}>
-            <li className="text-center py-1 hover:text-violet-400">
+          <Link
+            to={"education"}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-70}
+            onClick={toggle}
+          >
+            <li className="text-center py-1 hover:text-violet-400 cursor-pointer">
+              Educación
+            </li>
+          </Link>
+
+          <Link
+            to={"experience"}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-70}
+            onClick={toggle}
+          >
+            <li className=" text-center py-1 hover:text-violet-400 cursor-pointer">
+              Experiencias
+            </li>
+          </Link>
+          <Link
+            to={"technologies"}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-40}
+            onClick={toggle}
+          >
+            <li className="text-center py-1 hover:text-violet-400 cursor-pointer">
+              Tecnologias
+            </li>
+          </Link>
+
+          <Link
+            to={"projects"}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={toggle}
+            offset={-70}
+          >
+            <li className="text-center py-1 hover:text-violet-400 cursor-pointer">
               Proyectos
             </li>
           </Link>
-          <Link to={"/contact"}>
-            <li className="text-center py-1 hover:text-violet-400">
-              Contact Me
+          <Link
+            to={"contact"}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={toggle}
+            offset={-70}
+          >
+            <li className="text-center py-1 hover:text-violet-400 cursor-pointer">
+              Contacto
             </li>
           </Link>
         </ul>
@@ -74,9 +140,11 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={10}
           >
-            <li className="text-center hover:text-violet-400">Inicio</li>
+            <li className="text-center hover:text-violet-400 cursor-pointer">
+              Inicio
+            </li>
           </Link>
           <Link
             to={"about"}
@@ -84,19 +152,11 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-20}
           >
-            <li className="text-center hover:text-violet-400">Sobre Mi</li>
-          </Link>
-          <Link
-            to={"technologies"}
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-300}
-          >
-            <li className="text-center hover:text-violet-400">Tecnologias</li>
+            <li className="text-center hover:text-violet-400 cursor-pointer">
+              Sobre Mi
+            </li>
           </Link>
           <Link
             to={"education"}
@@ -104,9 +164,11 @@ const Navbar = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-150}
           >
-            <li className=" text-center hover:text-violet-400">Educación</li>
+            <li className=" text-center hover:text-violet-400 cursor-pointer">
+              Educación
+            </li>
           </Link>
           <Link
             to={"experience"}
@@ -116,17 +178,34 @@ const Navbar = () => {
             duration={500}
             offset={-70}
           >
-            <li className=" text-center hover:text-violet-400">Experiencias</li>
+            <li className=" text-center hover:text-violet-400 cursor-pointer">
+              Experiencias
+            </li>
           </Link>
+          <Link
+            to={"technologies"}
+            activeClass="active"
+            spy={true}
+            smooth={true}
+            duration={500}
+            offset={-50}
+          >
+            <li className="text-center hover:text-violet-400 cursor-pointer">
+              Tecnologias
+            </li>
+          </Link>
+
           <Link
             to={"projects"}
             activeClass="active"
             spy={true}
             smooth={true}
             duration={500}
-            offset={-70}
+            offset={-100}
           >
-            <li className="text-center hover:text-violet-400">Proyectos</li>
+            <li className="text-center hover:text-violet-400 cursor-pointer">
+              Proyectos
+            </li>
           </Link>
           <Link
             to={"contact"}
@@ -136,7 +215,9 @@ const Navbar = () => {
             duration={500}
             offset={-70}
           >
-            <li className="text-center hover:text-violet-400">Contacto</li>
+            <li className="text-center hover:text-violet-400 cursor-pointer">
+              Contacto
+            </li>
           </Link>
         </ul>
       </div>

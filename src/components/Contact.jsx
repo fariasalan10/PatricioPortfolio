@@ -22,8 +22,11 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex gap-4 text-2xl text-center">
-        <button className="mx-auto mb-20 rounded bg-violet-900 px-2 py-2 text-xs text-neutral-300 font-medium">
-          <Link onClick={scrollToTop}>Volver al inicio</Link>
+        <button
+          onClick={scrollToTop}
+          className="mx-auto mb-20 rounded bg-violet-900 px-2 py-2 text-xs text-neutral-300 font-medium"
+        >
+          Volver al inicio
         </button>
       </div>
     </div>

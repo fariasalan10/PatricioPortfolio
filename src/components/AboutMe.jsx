@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <div
       id="about"
-      className="border-b py-10 px-20 flex flex-col  items-center justify-center border-neutral-900"
+      className="border-b py-10 px-10 flex flex-col items-center justify-center border-neutral-900"
     >
       <h2 className="my-20 text-3xl text-center">
         Sobre <span className="text-neutral-500">Mi</span>

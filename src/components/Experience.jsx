@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <div id="education">
-      <div className="border-b border-neutral-900 pb-4">
+    <div className="px-10 ">
+      <div id="education" className="border-b border-neutral-900 pb-4">
         <motion.h2
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -22,7 +22,7 @@ const Experience = () => {
                 transition={{ duration: 1 }}
                 className="w-full lg:w-1/2 lg:flex"
               >
-                <p className="mb-2 text-md text-neutral-500 mx-auto">
+                <p className="mb-2 text-sm text-neutral-500 mx-auto">
                   {education.year} <br />
                   <div className="text-sm">{education.ubication}</div>
                 </p>
@@ -31,18 +31,19 @@ const Experience = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 1 }}
-                className="w-full lg:w-1/2 max-w-xl"
+                className="w-full lg:w-1/2 max-w-xl "
               >
                 <h3 className="mb-2 font-bold">{education.role}</h3>
-                <span className="text-sm text-violet-500">
-                  {education.company}
-                </span>{" "}
-                <br />
-                <a href={education.certificate}>
-                  <span className="mr-2 mt-7 rounded bg-violet-900 px-2 py-1 text-xs text-neutral-300 font-medium">
-                    Certificado
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-violet-500">
+                    {education.company}
                   </span>
-                </a>
+                  <a href={education.certificate}>
+                    <span className="mr-2 mt-15 rounded bg-violet-900 px-2 py-1 text-xs text-neutral-300 font-medium">
+                      Certificado
+                    </span>
+                  </a>
+                </div>
               </motion.div>
             </div>
           ))}
@@ -66,7 +67,7 @@ const Experience = () => {
                 transition={{ duration: 1 }}
                 className="w-full lg:w-1/2 lg:flex"
               >
-                <p className="mb-2 text-md text-neutral-500 mx-auto">
+                <p className="mb-2 text-sm text-neutral-500 mx-auto">
                   {experience.year} <br />
                   <div className="text-sm">{experience.ubication}</div>
                 </p>
@@ -75,7 +76,7 @@ const Experience = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 1 }}
-                className="w-full lg:w-1/2 max-w-xl"
+                className="w-full lg:w-1/2 max-w-xl flex flex-col justify-center"
               >
                 <h3 className="mb-2 font-bold">{experience.role}</h3>
                 <span className="text-sm text-violet-500">
@@ -84,14 +85,16 @@ const Experience = () => {
                 <p className="mt-2 mb-4 text-sm text-neutral-500">
                   {experience.description}
                 </p>
-                {experience.technologies.map((technology, index) => (
-                  <span
-                    key={index}
-                    className="mr-2 mt-7 rounded bg-violet-900 px-2 py-1 text-xs text-neutral-300 font-medium"
-                  >
-                    {technology}
-                  </span>
-                ))}
+                <div className="flex flex-wrap">
+                  {experience.technologies.map((technology, index) => (
+                    <span
+                      key={index}
+                      className="mr-2 mt-2 rounded bg-violet-900 px-1 py-1 text-xs text-neutral-300 font-medium"
+                    >
+                      {technology}
+                    </span>
+                  ))}
+                </div>
               </motion.div>
             </div>
           ))}

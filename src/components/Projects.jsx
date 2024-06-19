@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="projects" className="border-b border-neutral-900 pb-4">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1 }}
         className="mt-20 text-center text-3xl"
       >
-        Projects
+        Proyectos
       </motion.h2>
       <motion.h3
         whileInView={{ opacity: 1, y: 0 }}
@@ -29,14 +29,13 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/2"
             >
-              <a href={project.url}>
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  style={{ width: 350, height: 300 }}
-                  className="mb-4 rounded-3xl lg:mx-auto"
-                />
-              </a>
+              <img
+                src={project.image}
+                href={project.url}
+                alt={project.title}
+                style={{ width: 350, height: 300 }}
+                className="mb-4 rounded-3xl lg:mx-auto"
+              />
             </motion.div>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}

@@ -1,6 +1,7 @@
 import { HOME_CONTENT } from "../constants";
 import profileImage from "../assets/PatricioLarriagaProfileImage.jpg";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const container = (delay) => ({
   hidden: { opacity: 0, x: -100 },
@@ -13,15 +14,18 @@ const container = (delay) => ({
 
 const Home = () => {
   return (
-    <div className="border-b border-neutral-900 pb-20 lg:mb-50">
+    <div
+      className="px-10 pt-10 border-b border-neutral-900 pb-20 lg:mb-50 flex flex-col lg:flex-row items-center justify-center"
+      id="home"
+    >
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-center text-center lg:items-start">
             <motion.h1
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-5 text-center text-5xl font-thin text-white tracking-tight lg:text-7xl lg:mt-16"
+              className="font-bold pb-5 text-5xl font-thin text-white lg:text-7xl items-center lg:items-start lg:mt-16"
             >
               PATRICIO LARRIAGA
             </motion.h1>
@@ -45,7 +49,7 @@ const Home = () => {
         </div>
         <div className="pt-10 w-full lg:w-1/2 lg:p-8 my-auto">
           <div>
-            <a className="flex justify-center" href="./AboutMe">
+            <Link className="flex justify-end items-center" to="about">
               <motion.img
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
@@ -54,8 +58,8 @@ const Home = () => {
                 className="rounded-full w-2/3"
                 src={profileImage}
                 alt="Patricio Larriaga"
-              />
-            </a>
+              />{" "}
+            </Link>
           </div>
         </div>
       </div>

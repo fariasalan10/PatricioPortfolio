@@ -4,9 +4,12 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div
+      id="about"
+      className="border-b py-10 px-20 flex flex-col  items-center justify-center border-neutral-900"
+    >
       <h2 className="my-20 text-3xl text-center">
-        About <span className="text-neutral-500">Me</span>
+        Sobre <span className="text-neutral-500">Mi</span>
       </h2>
       <div className="flex flex-wrap">
         <motion.div

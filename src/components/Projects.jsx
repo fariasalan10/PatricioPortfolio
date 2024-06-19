@@ -31,6 +31,7 @@ const Projects = () => {
             >
               <a
                 href={project.url}
+                target="_blank"
                 className="flex justify-center items-center w-fit h-fit"
               >
                 <img

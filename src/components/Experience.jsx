@@ -38,7 +38,7 @@ const Experience = () => {
                   <span className="text-sm text-violet-500">
                     {education.company}
                   </span>
-                  <a href={education.certificate}>
+                  <a href={education.certificate} target="_blank">
                     <span className="mr-2 mt-15 rounded bg-violet-900 px-2 py-1 text-xs text-neutral-300 font-medium">
                       Certificado
                     </span>

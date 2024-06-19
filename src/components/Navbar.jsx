@@ -13,11 +13,20 @@ const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between py-6">
       <div className="my-8 mx-2 flex gap-4 text-2xl items-center justify-center ">
-        <a href="https://www.linkedin.com/in/patricio-larriaga-b30724231/">
+        <a
+          href="https://www.linkedin.com/in/patricio-larriaga-b30724231/"
+          target="_blank"
+        >
           <FaLinkedin className="hover:text-violet-400 cursor-pointer" />
         </a>
-        <FaGithub className="hover:text-violet-400 cursor-pointer" />
-        <a href="https://www.instagram.com/ezequiel_larriaga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+        <a href="https://github.com/EzequielLarriaga" target="_blank">
+          <FaGithub className="hover:text-violet-400 cursor-pointer" />
+        </a>
+
+        <a
+          href="https://www.instagram.com/ezequiel_larriaga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+        >
           <FaInstagram className="hover:text-violet-400 cursor-pointer" />
         </a>
       </div>
